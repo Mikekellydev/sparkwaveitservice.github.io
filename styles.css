@@ -93,12 +93,25 @@ nav {
 .cta-button:hover {
     background: #e6b800;
 }
+/* About Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+}
 
+.about img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
 /* Services Section */
 .services {
     padding: 40px 20px;
     text-align: center;
+    background: #f4f4f4;
 }
 
 .service-grid {
@@ -114,14 +127,50 @@ nav {
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
+    text-align: center;
 }
 
-/* About and Contact */
-.about, .contact {
+.service-item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Contact Form */
+.contact {
     padding: 40px 20px;
     text-align: center;
-    background: #ffffff;
+    background: white;
 }
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #005bb5;
+}
+
+
+v
 
 /* Footer */
 footer {
