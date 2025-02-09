@@ -136,6 +136,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    border-radius: auto;
 }
 
 .founder img {
