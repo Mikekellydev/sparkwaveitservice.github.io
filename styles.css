@@ -5,8 +5,19 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    text-wrap: wrap;
 }
-
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
 /* Header */
 header {
     background: #0073e6;
@@ -68,7 +79,7 @@ header {
 }
 
 .hero img {
-    width: 80%;
+    width: 100%;
     max-width: 500px;
 }
 
@@ -103,6 +114,36 @@ header {
     text-align: center;
 }
 
+
+/* Founder Section */
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.founder img {
+    width: 150px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* List Styling - Remove Bullets */
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    align: center;
+}
+
+.no-bullets p {
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    align:center;
+}
 /* Lead Magnet */
 .lead-magnet {
     padding: 40px 20px;
@@ -118,6 +159,111 @@ header {
     padding: 40px 20px;
 }
 
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Contact Form */
+.contact form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* CTA Button */
+.contact .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: auto15px;
+    transition: background 0.3s ease;
+}
+
+.contact .cta-button:hover {
+    background: #005bb5;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+about h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
 /* FAQs */
 .faqs {
     padding: 40px 20px;
