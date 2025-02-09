@@ -23,9 +23,19 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
+
+.logo img {
+    width: 5rem; /* Adjust as needed */
+    height: auto;
+    margin-left: 1rem; /* Add spacing from the left */
+    margin-right: 20px;
+}
+
+
 
 .nav-links {
     list-style: none;
@@ -131,8 +141,8 @@ nav {
 }
 
 .service-item img {
-    width: 80px;
-    height: 80px;
+    width: 15rem;
+    height: 10rem;
 }
 
 /* Contact Form */
