@@ -1,26 +1,20 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
 /* Header */
 header {
     background: #0073e6;
     padding: 15px 0;
     color: white;
-    text-align: center;
 }
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -35,95 +29,27 @@ header {
     width: 50px;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
-/* Hero Section */
-.hero {
-    background: #ddd;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero-content {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.hero img {
-    width: 80%;
-    max-width: 500px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ffcc00;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Trust Section */
-.trust {
-    padding: 40px 20px;
-    background: white;
-}
-
-.trust-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.trust-item {
-    width: 30%;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Lead Magnet */
-.lead-magnet {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-/* Call to Action */
-.cta {
-    background: #0073e6;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-/* FAQs */
-.faqs {
-    padding: 40px 20px;
-    background: white;
-}
-
-.faq-item {
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0073e6;
-    color: white;
 }
