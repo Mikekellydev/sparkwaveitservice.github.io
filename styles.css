@@ -10,46 +10,30 @@ body {
 /* Header */
 header {
     background: #0073e6;
-    padding: 20px 0;
+    padding: 15px 0;
     color: white;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
+    gap: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
-
-.site-name {
-    margin-left: 10px;
-}
-
 
 .logo img {
-    width: 5rem; /* Adjust as needed */
-    height: auto;
-    margin-left: 1rem; /* Add spacing from the left */
-    margin-right: 20px;
+    width: 50px;
 }
-
-
 
 .nav-links {
     list-style: none;
@@ -65,202 +49,76 @@ nav {
 
 /* Hero Section */
 .hero {
+    background: #ddd;
     text-align: center;
     padding: 60px 20px;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark text for contrast */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.hero h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-image {
-    width: 40%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.hero-button {
-    margin-top: 20px;
+.hero img {
+    width: 80%;
+    max-width: 500px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 10px 20px;
     background: #ffcc00;
     color: #333;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-
-
-
-/* About Section */
-.about {
-    padding: 40px 20px;
-    text-align: center;
-    background: #ffffff;
-}
-
-/* Founder Section */
-.founder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 20px;
-    border-radius: auto;
 }
 
-.founder img {
-    width: 15rem;
-    height: 18rem;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* List Styling - Remove Bullets */
-
-ul {
-    list-style: none;
-    padding: 0%;
-    margin: 20px 0;
-}
-
-ul li {
-    margin: 10px 0; 
-    font-weight: bold;
-}
-
-/* Services Section */
-.services {
+/* Trust Section */
+.trust {
     padding: 40px 20px;
-    text-align: center;
-    background: #f4f4f4;
+    background: white;
 }
 
-.service-grid {
+.trust-grid {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.service-item {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.trust-item {
     width: 30%;
-    text-align: center;
-}
-
-.service-item img {
-    width: 15rem;
-    height: 10rem;
-}
-
-/* Contact Form */
-/* Contact Section */
-.contact {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact p {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-/* Contact Form */
-.contact form {
-    background: white;
-    max-width: 600px;
-    margin: 20px auto;
     padding: 20px;
-    border-radius: 5px;
+    background: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.contact label {
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-/* CTA Button */
-.contact .cta-button {
-    display: block;
-    width: 100%;
     text-align: center;
-    padding: 10px;
+}
+
+/* Lead Magnet */
+.lead-magnet {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Call to Action */
+.cta {
     background: #0073e6;
     color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background 0.3s ease;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.contact .cta-button:hover {
-    background: #005bb5;
+/* FAQs */
+.faqs {
+    padding: 40px 20px;
+    background: white;
 }
 
-
+.faq-item {
+    margin-bottom: 20px;
+}
 
 /* Footer */
 footer {
@@ -269,5 +127,3 @@ footer {
     background: #0073e6;
     color: white;
 }
-
-
