@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Sparkwave IT Service</title>
+    <title>Contact Us | SparkWave IT Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="logo"> 
-                <img src="images/logo.png" alt="Sparkwave IT Service Logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html" class="logo">SparkWave IT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need IT support? We’re here to help. Reach out to us for inquiries about our services, pricing, or technical support. Fill out the form below, and we’ll get back to you as soon as possible.</p>
-    
-        <form action="https://formspree.io/f/your_form_id" method="POST">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-    
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-    
-            <button type="submit" class="cta-button">Send Message</button>
-        </form>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions? Fill out the form below and we’ll get back to you shortly.</p>
+
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Sparkwave IT Service. All Rights Reserved.</p>
+        <p>&copy; 2025 SparkWave IT Services. All rights reserved.</p>
     </footer>
 </body>
 </html>
