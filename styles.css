@@ -206,18 +206,26 @@ body {
 /* Footer */    
 
 .footer {
-    background: #0073e6;
+    background-color: #0073e6;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
-.fab {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    color: white;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
-.facebook {
-    color: #3b5998;
-}   
+.social-icon img {
+    width: 24px; /* Smaller size */
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
