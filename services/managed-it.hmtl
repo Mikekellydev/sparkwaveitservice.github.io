@@ -1,3 +1,4 @@
+<!-- Managed IT Services -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,88 +80,13 @@
     
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="SparkWave IT Logo">
-                </a>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="hero" style="background-image: url('images/managed-it.jpg');">
+        <h1>Managed IT Services</h1>
     </header>
-
-    <!-- Banner Section -->
-
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>SparkWave IT Services, Your Trusted IT Partner</h1>
-        <p>Helping businesses with reliable IT solutions and support.</p>
-        <a href="contact.html" class="cta-button">Get Started</a>
-    </div>
-</section>
-
-
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-item">
-                <i class="fas fa-cogs"></i> <!-- Icon -->
-                <h3>Managed IT Services</h3>
-                <p>Comprehensive IT management to keep your business running smoothly.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-cloud"></i> <!-- Icon -->
-                <h3>Cloud Solutions</h3>
-                <p>Scalable cloud infrastructure tailored to your needs.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-shield-alt"></i> <!-- Icon -->
-                <h3>Cybersecurity</h3>
-                <p>Protect your business from threats with our security solutions.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-network-wired"></i> <!-- Icon -->
-                <h3>Network Infrastructure</h3>
-                <p>We design, implement, and maintain robust network infrastructure tailored to your business needs. From secure Wi-Fi solutions to enterprise-level networking, we enhance connectivity and efficiency.</p>
-            </div>
-        </div>
-        <a href="services.html" class="cta-button">View All Services</a>
-
+    <section class="service-details">
+        <h2>Comprehensive IT Management</h2>
+        <p>Our managed IT services provide 24/7 monitoring, proactive maintenance, and expert support to keep your business running smoothly.</p>
     </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="social-links">
-            <a href="https://www.facebook.com/michaelkellycoaching" target="_blank" class="social-icon">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://x.com/mikekellyonline" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/michaeldavidkelly/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://linktr.ee/coachmikekelly" target="_blank" class="social-icon">
-                <i class="fas fa-link"></i>  <!-- Using a generic link icon -->
-            </a>
-        </div>
-        <p>© 2024 Your Company. All Rights Reserved.</p>
-    </footer>
-    
-    
-
+    <a href="contact.html" class="cta-button">Get Started</a>
 </body>
 </html>
