@@ -242,6 +242,11 @@ body {
     transition: background 0.3s;
 }
 
+.services-footer {
+    text-align: center;
+    margin-top: 40px; /* Adjust this for spacing */
+}
+
 .service-btn:hover {
     background: #0056b3;
 }
@@ -251,6 +256,90 @@ body {
 @media (max-width: 768px) {
     .service-container {
         grid-template-columns: repeat(1, 1fr); /* 1 column on smaller screens */
+    }
+}
+
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: blue;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between elements */
+}
+
+/* Labels */
+.contact-form label {
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f8f9fa;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Improve textarea appearance */
+.contact-form textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+/* Submit Button */
+.cta-button {
+    background: #0073e6;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    background: #005bb5;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 20px;
     }
 }
 
