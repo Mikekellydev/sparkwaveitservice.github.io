@@ -31,15 +31,29 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    backgroud: #0073e6;
+    background: #0073e6;
     align-items: right;
     padding: 0 5%;
     margin-bottom: justify;
+    padding-top: 20px; /* Adjust as needed */
+    color: white;
+
 }
+
+.navbar .nav-links a {
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Yellow hover effect */
+}
+
+
 /* Logo */
 .logo img {
     max-width: 50px; /* Adjust size */
-    height: auto;
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 /* Navigation Links */
@@ -60,6 +74,7 @@ body {
     color: #0073e6;
     font-weight: bold;
     padding: 10px;
+    margin-top: 20px;;
 }
 
 .nav-links ul li a:hover {
