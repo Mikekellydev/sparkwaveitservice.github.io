@@ -101,6 +101,27 @@ body {
     position: relative;
 }
 
+.services-page-hero {
+    background-image: url('images/IT-Consulting-Hero.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Reduced height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 60vh; /* Limits the image height */
+    object-fit: contain; /* Keeps aspect ratio without cropping */
+}
+
 .hero::before {
     content: "";
     position: absolute;
