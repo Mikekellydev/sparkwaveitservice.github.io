@@ -62,22 +62,22 @@
       <h2>Contact Us</h2>
 <section class="contact-section">
   <h2>Contact Us</h2>
-  <form class="contact-form" action="https://formsubmit.co/michael@sparkwaveitservice.com" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
-
-    <!-- Basic spam protection -->
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Send Message</button>
-  </form>
+  <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xnnjzwga"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
   <p style="text-align:center; margin-top: 20px;">
     Or email us directly: <a href="mailto:michael@sparkwaveitservice.com">michael@sparkwaveitservice.com</a>
