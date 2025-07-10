@@ -60,21 +60,28 @@
 
     <section id="contact">
       <h2>Contact Us</h2>
-<section id="contact">
+<section class="contact-section">
   <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/xnnjzwga" method="POST">
+  <form class="contact-form" action="https://formsubmit.co/michael@sparkwaveitservice.com" method="POST">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" required />
+    <input type="text" id="name" name="name" required />
 
     <label for="email">Email</label>
-    <input type="email" name="email" id="email" required />
+    <input type="email" id="email" name="email" required />
 
     <label for="message">Message</label>
-    <textarea name="message" id="message" rows="6" required></textarea>
+    <textarea id="message" name="message" rows="6" required></textarea>
 
-    <button type="submit" class="btn-primary">Send Message</button>
+    <!-- Basic spam protection -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Send Message</button>
   </form>
-  <p>Email us directly: <a href="mailto:michael@sparkwaveitservice.com">michael@sparkwaveitservice.com</a></p>
+
+  <p style="text-align:center; margin-top: 20px;">
+    Or email us directly: <a href="mailto:michael@sparkwaveitservice.com">michael@sparkwaveitservice.com</a>
+  </p>
 </section>
 
       <p>Or Email: <a href="mailto:michael@sparkwaveitservice.com">michael@sparkwaveitservice.com</a></p>
