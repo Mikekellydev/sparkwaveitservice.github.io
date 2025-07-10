@@ -1,3 +1,7 @@
+  body {
+    background: red !important;
+}
+
 /* Base styles */
 body {
   font-family: Arial, sans-serif;
