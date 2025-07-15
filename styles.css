@@ -10,12 +10,16 @@ body {
 
 /* Navigation */
 nav {
-  background: #0d1a26;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}
 }
 
 nav h1 {
