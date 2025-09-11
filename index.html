@@ -1,138 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sparkwave IT Service offers managed IT, cloud solutions, cybersecurity, and web development for small to mid-sized businesses." />
-  <meta name="keywords" content="IT Services, Cloud Solutions, Cybersecurity, Web Development, Managed IT, Sparkwave" />
-  <meta name="author" content="Sparkwave IT Service" />
-  <title>Sparkwave IT Service | Your Trusted Cloud & IT Partner</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparkwave IT Service</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      background: url("/images/Sparkwave Hero IMG.jpg") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
       <h1>Sparkwave IT Service</h1>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <h2>Secure. Scalable. Managed IT Solutions.</h2>
-      <p>Cloud services, cybersecurity, and tech consulting tailored for your business success.</p>
-      <a href="#contact" class="btn-primary">Schedule a Free Consultation</a>
-    </section>
-  </header>
-
-  <main>
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="service-grid">
-        <div class="service">
-          <h3>Managed IT Services</h3>
-          <p>Proactive monitoring, patching, and full-service support for your business.</p>
-        </div>
-        <div class="service">
-          <h3>Cloud Solutions</h3>
-          <p>Migrations, hybrid deployments, and cloud-native app support.</p>
-        </div>
-        <div class="service">
-          <h3>Cybersecurity</h3>
-          <p>Endpoint protection, compliance, and threat response.</p>
-        </div>
-        <div class="service">
-          <h3>Web Development</h3>
-          <p>Responsive, SEO-ready websites tailored to your brand.</p>
-        </div>
-        <div class="service">
-          <h3>IT Consulting</h3>
-          <p>Strategic advice and system architecture planning for your goals.</p>
-        </div>
-      </div>
-    </section>
-
-  <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About SparkWave IT Service</h2>
-      <p>
-        SparkWave IT Service exists to empower churches, ministries, and small nonprofits with secure, scalable technology aligned with their mission. We deliver solutions in web development, cloud infrastructure, and IT support with integrity and a Kingdom focus.
-      </p>
-      <p>
-        Founder <strong>Michael D. Kelly</strong> is a veteran, DevOps engineer, and ministry leader with a heart for serving the local church and community-based organizations in and around Auburn, IN.
-      </p>
+      <p>Equipping Faith & Nonprofits Through Purposeful Technology</p>
     </div>
-    <div class="about-image">
-      <img src="images/michael-flag.jpg" alt="Michael Kelly">
-    </div>
-   
-    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="michaeldavidkelly" data-version="v1">
-      <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/michaeldavidkelly?trk=profile-badge"></a>
-    </div>    
-  </div>
-</section>
+  </section>
 
-<section id="why-us" class="why-us-section">
-  <div class="why-us-container">
-    <h2>Why Clients Choose SparkWave IT</h2>
-    <div class="why-us-grid">
-      <div class="why-us-card">
-        <h3>Mission-Driven</h3>
-        <p>We serve with purpose—helping churches and nonprofits grow through tech solutions aligned with their values and calling.</p>
-      </div>
-      <div class="why-us-card">
-        <h3>Scalable & Secure</h3>
-        <p>Whether you're launching a site or expanding cloud infrastructure, we implement solutions that grow with you—safely and reliably.</p>
-      </div>
-      <div class="why-us-card">
-        <h3>Veteran-Led</h3>
-        <p>Our work is grounded in discipline, excellence, and service. Founder Michael D. Kelly brings years of leadership and tech expertise to every project.</p>
-      </div>
-      <div class="why-us-card">
-        <h3>Local & Personal</h3>
-        <p>We’re based in Auburn, IN and we value relationships. When you work with us, you’re never just a ticket number—you’re a partner in Kingdom work.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-<section class="contact-section">
-  <h2>Contact Us</h2>
-  <!-- modify this form HTML and place wherever you want your form -->
-<form class="contact-form" action="https://formsubmit.co/michael@sparkwaveitservice.com" method="POST">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" required />
-
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required />
-
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
-
-  <!-- Optional spam protection -->
-  <input type="text" name="_honey" style="display:none">
-  <input type="hidden" name="_captcha" value="false">
-
-  <button type="submit">Send Message</button>
-</form>
-
-
- 
-</section>
-
-      
-      <p>Or <a href="https://linkedin.com/in/michaeldavidkelly" target="_blank">connect on LinkedIn</a>.</p>
-    </section>
-     
-  </main>
-  <footer>
-    <p>&copy; 2025 Sparkwave IT Service. All rights reserved.</p>
-  </footer>
 </body>
 </html>
