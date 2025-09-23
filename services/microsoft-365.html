@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microsoft 365 Tenant Setup & Administration | Sparkwave IT Service</title>
+  <meta name="description" content="Secure identity, licensing guidance, SharePoint/OneDrive governance, Teams rollout, and security baselines tailored for churches & nonprofits in Northeast Indiana and beyond." />
+  <link rel="canonical" href="https://sparkwaveitservice.com/services/microsoft-365" />
+
+  <!-- Fonts & icons to match index -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --brand:#2c5aa0; --brand-600:#234a84; --accent:#28a745; --ink:#0f172a; --muted:#475569;
+      --bg:#0b1220; --card:#ffffff; --ring:rgba(44,90,160,.35); --shadow:0 10px 30px rgba(2,8,23,.18);
+      --radius:18px; --radius-lg:26px; --maxw:1200px;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:#f8fafc;line-height:1.6}
+    a{color:var(--brand);text-decoration:none} a:hover{color:var(--brand-600)}
+    .container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+    .navwrap{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(10px);background:rgba(255,255,255,.7);border-bottom:1px solid rgba(15,23,42,.06)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;color:#0f172a}
+    .brand img{width:40px;height:40px;border-radius:10px;object-fit:cover}
+    .navlinks{display:flex;gap:20px;align-items:center}.navlinks a{font-weight:600;color:#0f172a;opacity:.9}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.25)}
+    .cta:hover{background:var(--brand-600)}
+    .page-hero{padding:80px 0 36px;background:linear-gradient(180deg, rgba(11,18,32,.35), rgba(11,18,32,.75)), url('/images/website-hero-linkedin.png') center/cover no-repeat;color:#e6edf6}
+    .eyebrow{display:inline-block;background:rgba(40,167,69,.14);color:#e8fff0;border:1px solid rgba(40,167,69,.3);padding:6px 12px;border-radius:999px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;font-size:.75rem}
+    .hero-title{margin:14px 0 8px;font-size:clamp(1.8rem,2.35rem + 1.2vw,3rem);line-height:1.12}
+    .hero-sub{color:#e2e8f0;max-width:820px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;font-weight:700;border:1px solid transparent}
+    .btn.primary{background:var(--accent);color:#fff}.btn.primary:hover{filter:brightness(.95)}
+    .btn.secondary{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.32)}
+    section{padding:clamp(56px,6.5vw,90px) 0}
+    .grid{display:grid;gap:20px}.grid-2{grid-template-columns:1.2fr .8fr}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:980px){.grid-2,.grid-3{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+    .list{margin:10px 0 0 0;padding:0 0 0 18px;color:#334155}
+    footer{background:#0f1b33;color:#cbd5e1}
+    .footgrid{display:grid;gap:24px;grid-template-columns:1.3fr .7fr .7fr}
+    @media (max-width:900px){.footgrid{grid-template-columns:1fr 1fr}}
+    @media (max-width:640px){.footgrid{grid-template-columns:1fr}}
+    .footbrand{display:flex;gap:12px;align-items:center;font-weight:800;color:#e2e8f0}
+    .footbrand img{width:42px;height:42px;border-radius:10px}
+    .copyright{border-top:1px solid rgba(148,163,184,.2);margin-top:26px;padding:16px 0;text-align:center;font-size:.9rem}
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Microsoft 365 Tenant Setup & Administration",
+    "provider": { "@type": "Organization", "name": "Sparkwave IT Service", "url": "https://sparkwaveitservice.com", "logo": "https://sparkwaveitservice.com/images/logo.png" },
+    "areaServed": ["Auburn, IN", "Fort Wayne, IN", "Northeast Indiana", "Remote"],
+    "audience": { "@type": "Audience", "audienceType": "Churches and Nonprofits" },
+    "serviceType": "Cloud Productivity Platform Administration",
+    "description": "Secure identity, licensing, SharePoint/OneDrive governance, Teams rollout, and security baselines for ministries.",
+    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Nav -->
+  <div class="navwrap">
+    <div class="container">
+      <nav aria-label="Main">
+        <a class="brand" href="/"><img src="/images/logo.png" alt="Sparkwave IT Service logo" /><span>Sparkwave IT Service</span></a>
+        <div class="navlinks">
+          <a href="/#services">Services</a>
+          <a href="/#about">About</a>
+          <a href="/#contact">Contact</a>
+          <a class="cta" href="/#contact">Book a Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Mission-First Technology</span>
+      <h1 class="hero-title">Microsoft 365 Tenant Setup & Administration</h1>
+      <p class="hero-sub">Secure identity, licensing clarity, SharePoint/OneDrive governance, Teams rollouts, and guardrails that protect people and data.</p>
+      <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn primary" href="/#contact">Start a Free Discovery Call</a>
+        <a class="btn secondary" href="#features">Explore Features</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why it matters -->
+  <section>
+    <div class="container grid grid-2">
+      <div>
+        <h2>Why Microsoft 365 matters for ministry</h2>
+        <p class="hero-sub" style="color:#475569; margin:0 0 8px 0;">
+          The tools you already own can reduce chaos and increase collaboration — if your tenant is set up with clear policies,
+          secure identity, and a simple folder strategy volunteers can follow.
+        </p>
+        <ul class="list">
+          <li><strong>Clarity for staff & volunteers:</strong> where to save, how to share, who has access.</li>
+          <li><strong>Security by default:</strong> MFA, conditional access, and data loss prevention that respects people.</li>
+          <li><strong>Governance that scales:</strong> SharePoint sites and Teams that don’t sprawl out of control.</li>
+        </ul>
+      </div>
+      <aside class="card">
+        <h3>At-a-glance</h3>
+        <ul class="list">
+          <li>Licensing guidance & cost optimization</li>
+          <li>Secure identity (MFA, conditional access)</li>
+          <li>SharePoint/OneDrive structure & permissions</li>
+          <li>Teams rollout & adoption tips</li>
+          <li>Email hygiene (SPF/DKIM/DMARC)</li>
+          <li>Backups & retention</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" style="padding-top:0;">
+    <div class="container">
+      <h2>What’s included</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Secure Identity</h3>
+          <p style="color:#475569">MFA that’s actually usable, baseline policies, and least-privilege admin roles.</p>
+          <ul class="list">
+            <li>MFA & conditional access</li>
+            <li>Role-based admin access</li>
+            <li>Security score improvements</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>SharePoint & OneDrive</h3>
+          <p style="color:#475569">Simple structure, clear permissions, and a “where to put what” guide.</p>
+          <ul class="list">
+            <li>Site architecture & templates</li>
+            <li>Permissions & sharing policies</li>
+            <li>File lifecycle & retention</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Teams Rollout</h3>
+          <p style="color:#475569">Guardrails to prevent sprawl, plus training that sticks.</p>
+          <ul class="list">
+            <li>Team templates & channels</li>
+            <li>Meetings, recordings, transcripts</li>
+            <li>Guest access policies</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Email Hygiene</h3>
+          <p style="color:#475569">Deliverability and protection: SPF, DKIM, DMARC, antiphish.</p>
+          <ul class="list">
+            <li>SPF/DKIM/DMARC alignment</li>
+            <li>Transport rules & quarantine</li>
+            <li>Training & templates</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Backups & Recovery</h3>
+          <p style="color:#475569">3-2-1 for mail, files, and sites — with tested restores.</p>
+          <ul class="list">
+            <li>M365 backups (mail, OneDrive, SharePoint)</li>
+            <li>Retention labels & restores</li>
+            <li>Runbooks your team can follow</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Documentation</h3>
+          <p style="color:#475569">Clear, friendly docs for admins and volunteers.</p>
+          <ul class="list">
+            <li>Quick-start & onboarding guides</li>
+            <li>Security & sharing do/don’t list</li>
+            <li>Admin change log</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcomes -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <h2>Practical outcomes</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>Less chaos.</strong><br/><span style="color:#475569">People know where to save and how to share.</span></div>
+        <div class="card"><strong>Better security.</strong><br/><span style="color:#475569">MFA and guardrails without slowing ministry down.</span></div>
+        <div class="card"><strong>Lower waste.</strong><br/><span style="color:#475569">Right-sized licenses and simpler governance.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+        <div>
+          <h2 style="margin:0 0 6px;">Ready to tune up your Microsoft 365 tenant?</h2>
+          <p style="margin:0;color:#475569">Book a 20-minute discovery call. We’ll map quick wins and a practical path forward.</p>
+        </div>
+        <div>
+          <a class="btn primary" href="/#contact">Schedule a Free Call</a>
+          <a class="btn secondary" href="mailto:michael@sparkwaveitservice.com?subject=Microsoft%20365%20Discovery%20Call">Email to Schedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same structure as index) -->
+  <footer>
+    <div class="container" style="padding: 40px 0 10px;">
+      <div class="footgrid">
+        <div>
+          <a href="/" class="footbrand" style="text-decoration:none;color:inherit;">
+            <img src="/images/logo.png" alt="Sparkwave IT Service logo" />
+            <span>Sparkwave IT Service</span>
+          </a>
+          <p style="margin-top:8px; color:#94a3b8; max-width:520px;">
+            Mission-first managed IT for churches & nonprofits. Cloud hosting, Microsoft 365, Google Workspace, security, and support.
+          </p>
+        </div>
+        <div class="footlinks" style="display:flex; flex-direction:column; gap:6px;">
+          <strong>Services</strong>
+          <a href="/services/managed-hosting.html" style="color:#94a3b8; text-decoration:none;">Managed Hosting</a>
+          <a href="/services/microsoft-365.html" style="color:#94a3b8; text-decoration:none;">Microsoft 365</a>
+          <a href="/services/google-workspace.html" style="color:#94a3b8; text-decoration:none;">Google Workspace</a>
+          <a href="/services/security.html" style="color:#94a3b8; text-decoration:none;">Security</a>
+          <a href="/services/backups.html" style="color:#94a3b8; text-decoration:none;">Backups</a>
+        </div>
+        <div class="footlinks" style="display:flex; flex-direction:column; gap:6px;">
+          <strong>Connect</strong>
+          <a href="mailto:michael@sparkwaveitservice.com" style="color:#94a3b8; text-decoration:none;">michael@sparkwaveitservice.com</a>
+          <a href="https://www.linkedin.com/in/michaeldavidkelly" target="_blank" rel="noopener" style="color:#94a3b8; text-decoration:none;">LinkedIn: Michael Kelly</a>
+          <a href="https://www.linkedin.com/company/sparkwaveitservice/?viewAsMember=false" target="_blank" rel="noopener" style="color:#94a3b8; text-decoration:none;">LinkedIn: Sparkwave IT Service</a>
+          <div style="margin-top:12px; display:flex; gap:12px;">
+            <a href="https://www.facebook.com/michaelkellycoaching" target="_blank" aria-label="Facebook" style="display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:8px;background:#1877f2;"><i class="fab fa-facebook-f" style="color:#fff;"></i></a>
+            <a href="https://www.linkedin.com/in/michaeldavidkelly" target="_blank" aria-label="LinkedIn" style="display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:8px;background:#0a66c2;"><i class="fab fa-linkedin-in" style="color:#fff;"></i></a>
+            <a href="https://www.youtube.com/@MichaelKellyonline" target="_blank" aria-label="YouTube" style="display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:8px;background:#ff0000;"><i class="fab fa-youtube" style="color:#fff;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">©<span id="y"></span> Sparkwave IT Service. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
