@@ -130,6 +130,41 @@
 
     /* Utility */
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  /* Price pill on cards */
+.card { position: relative; } /* keeps layout the same, enables the badge */
+.price-pill {
+  position: absolute; top: 16px; right: 16px;
+  background: #e8fff0; color: #1f5130;
+  border: 1px solid rgba(40,167,69,.35);
+  font-weight: 800; font-size: .85rem; letter-spacing: .2px;
+  padding: 6px 10px; border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(2,8,23,.07);
+}
+
+/* Mobile/tablet-only price notes under card descriptions */
+.mobile-price-note { display:none; color:#475569; margin:6px 0 0 0; font-weight:700; font-size:.95rem; }
+@media (max-width: 980px) { /* tablet + phone */
+  .mobile-price-note { display:block; }
+}
+
+/* Price pill */
+.card { position: relative; }
+.price-pill {
+  position: absolute; top: 16px; right: 16px;
+  background: #e8fff0; color: #1f5130;
+  border: 1px solid rgba(40,167,69,.35);
+  font-weight: 800; font-size: .85rem; letter-spacing: .2px;
+  padding: 6px 10px; border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(2,8,23,.07);
+}
+/* Mobile/tablet-only price note */
+.mobile-price-note { display:none; color:#475569; margin:6px 0 0 0; font-weight:700; font-size:.95rem; }
+@media (max-width: 980px) { .mobile-price-note { display:block; } }
+/* Linked cards */
+.card-link { display:block; color: inherit; text-decoration: none; }
+.card-link:hover { text-decoration: none; }
+
+  
   </style>
 
   <!-- Structured data -->
@@ -209,77 +244,94 @@
       <p class="section-lead">Clear offerings. Predictable pricing. Practical outcomes.</p>
 
       <div class="grid cols-3" style="margin-top: 22px;">
-        <!-- Managed Cloud Hosting -->
-        <a href="/services/managed-hosting.html" class="card card-link">
-          <span class="pill">Sparkwave Hosting</span>
-          <h3>Managed Cloud Hosting</h3>
-          <p>Powered by Sparkwave Hosting infrastructure: fast, secure websites and apps with SSL, monitoring, backups, and uptime reporting.</p>
-          <ul class="list">
-            <li>WordPress & static sites (GitHub Pages friendly)</li>
-            <li>Automatic backups & patching</li>
-            <li>DNS, SSL, CDN setup</li>
-          </ul>
-        </a>
+      <div class="grid cols-3" style="margin-top: 22px;">
+  
+  <!-- Managed Cloud Hosting -->
+  <a href="/services/managed-hosting.html" class="card card-link">
+    <span class="price-pill">$39/mo</span>
+    <span class="pill">Sparkwave Hosting</span>
+    <h3>Managed Cloud Hosting</h3>
+    <p>Powered by Sparkwave Hosting infrastructure: fast, secure websites and apps with SSL, monitoring, backups, and uptime reporting.</p>
+    <p class="mobile-price-note">Prices start at $39/mo</p>
+    <ul class="list">
+      <li>WordPress & static sites (GitHub Pages friendly)</li>
+      <li>Automatic backups & patching</li>
+      <li>DNS, SSL, CDN setup</li>
+    </ul>
+  </a>
 
-        <!-- Microsoft 365 -->
-        <a href="/services/microsoft-365.html" class="card card-link">
-          <span class="pill">Microsoft 365</span>
-          <h3>Tenant Setup & Administration</h3>
-          <p>Licensing guidance, secure identity, SharePoint/OneDrive governance, Teams rollouts, and security baselines tailored to your staff & volunteers.</p>
-          <ul class="list">
-            <li>Secure identity & MFA policies</li>
-            <li>Email, SharePoint, OneDrive migrations</li>
-            <li>Data loss prevention & backups</li>
-          </ul>
-        </a>
+  <!-- Microsoft 365 -->
+  <a href="/services/microsoft-365.html" class="card card-link">
+    <span class="price-pill">from $149/mo</span>
+    <span class="pill">Microsoft 365</span>
+    <h3>Tenant Setup & Administration</h3>
+    <p>Licensing guidance, secure identity, SharePoint/OneDrive governance, Teams rollouts, and security baselines tailored to your staff & volunteers.</p>
+    <p class="mobile-price-note">Prices start at $149/mo</p>
+    <ul class="list">
+      <li>Secure identity & MFA policies</li>
+      <li>Email, SharePoint, OneDrive migrations</li>
+      <li>Data loss prevention & backups</li>
+    </ul>
+  </a>
 
-        <!-- Google Workspace -->
-        <a href="/services/google-workspace.html" class="card card-link">
-          <span class="pill">Google Workspace</span>
-          <h3>Tenant Management & Migrations</h3>
-          <p>From small ministries to multi-site nonprofits — best-practice org structure, drive governance, and safe collaboration.</p>
-          <ul class="list">
-            <li>Org units & policies</li>
-            <li>Drive/Shared Drives structure</li>
-            <li>Email security & SPF/DKIM/DMARC</li>
-          </ul>
-        </a>
+  <!-- Google Workspace -->
+  <a href="/services/google-workspace.html" class="card card-link">
+    <span class="price-pill">from $129/mo</span>
+    <span class="pill">Google Workspace</span>
+    <h3>Tenant Management & Migrations</h3>
+    <p>From small ministries to multi-site nonprofits — best-practice org structure, drive governance, and safe collaboration.</p>
+    <p class="mobile-price-note">Prices start at $129/mo</p>
+    <ul class="list">
+      <li>Org units & policies</li>
+      <li>Drive/Shared Drives structure</li>
+      <li>Email security & SPF/DKIM/DMARC</li>
+    </ul>
+  </a>
 
-        <!-- Security -->
-        <a href="/services/security.html" class="card card-link">
-          <span class="pill">Security</span>
-          <h3>Protection & Compliance</h3>
-          <p>Right-sized security: passwords, MFA, patching, device management, and phishing training that respects people and budgets.</p>
-          <ul class="list">
-            <li>MFA & conditional access</li>
-            <li>Endpoint protections & updates</li>
-            <li>Policies & training</li>
-          </ul>
-        </a>
+  <!-- Security -->
+  <a href="/services/security.html" class="card card-link">
+    <span class="price-pill">from $199/mo</span>
+    <span class="pill">Security</span>
+    <h3>Protection & Compliance</h3>
+    <p>Right-sized security: passwords, MFA, patching, device management, and phishing training that respects people and budgets.</p>
+    <p class="mobile-price-note">Prices start at $199/mo</p>
+    <ul class="list">
+      <li>MFA & conditional access</li>
+      <li>Endpoint protections & updates</li>
+      <li>Policies & training</li>
+    </ul>
+  </a>
 
-        <!-- Backups -->
-        <a href="/services/backups.html" class="card card-link">
-          <span class="pill">Backups</span>
-          <h3>Backup & Recovery</h3>
-          <p>Because trust matters. We design 3-2-1 backup strategies for email, files, sites, and critical databases — tested and documented.</p>
-          <ul class="list">
-            <li>Microsoft 365/Google backups</li>
-            <li>Site & database backups</li>
-            <li>Disaster recovery runbooks</li>
-          </ul>
-        </a>
+  <!-- Backups -->
+  <a href="/services/backups.html" class="card card-link">
+    <span class="price-pill">from $79/mo</span>
+    <span class="pill">Backups</span>
+    <h3>Backup & Recovery</h3>
+    <p>Because trust matters. We design 3-2-1 backup strategies for email, files, sites, and critical databases — tested and documented.</p>
+    <p class="mobile-price-note">Prices start at $79/mo</p>
+    <ul class="list">
+      <li>Microsoft 365/Google backups</li>
+      <li>Site & database backups</li>
+      <li>Disaster recovery runbooks</li>
+    </ul>
+  </a>
 
-        <!-- Support -->
-        <a href="/services/support.html" class="card card-link">
-          <span class="pill">Support</span>
-          <h3>Friendly Helpdesk & Projects</h3>
-          <p>Simple support plans and project work. We meet you where you are and move at a pace your team can sustain.</p>
-          <ul class="list">
-            <li>Email & remote support</li>
-            <li>Onboarding & volunteer enablement</li>
-            <li>Quarterly roadmaps</li>
-          </ul>
-        </a>
+  <!-- Support -->
+  <a href="/services/support.html" class="card card-link">
+    <span class="price-pill">from $99/mo</span>
+    <span class="pill">Support</span>
+    <h3>Friendly Helpdesk & Projects</h3>
+    <p>Simple support plans and project work. We meet you where you are and move at a pace your team can sustain.</p>
+    <p class="mobile-price-note">Prices start at $99/mo</p>
+    <ul class="list">
+      <li>Email & remote support</li>
+      <li>Onboarding & volunteer enablement</li>
+      <li>Quarterly roadmaps</li>
+    </ul>
+  </a>
+</div>
+
+
       </div>
     </div>
   </section>

@@ -53,6 +53,19 @@
     .footbrand{display:flex;gap:12px;align-items:center;font-weight:800;color:#e2e8f0}
     .footbrand img{width:42px;height:42px;border-radius:10px}
     .copyright{border-top:1px solid rgba(148,163,184,.2);margin-top:26px;padding:16px 0;text-align:center;font-size:.9rem}
+  
+  /* Pricing blocks */
+.pricing { padding-top: 0; }
+.price-grid { display:grid; gap:20px; grid-template-columns:repeat(3, minmax(0,1fr)); }
+@media (max-width:980px){ .price-grid{ grid-template-columns:1fr; } }
+.price-card { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(2,8,23,.18); }
+.price-card h3 { margin:6px 0 6px; }
+.price { font-size: 1.9rem; font-weight: 800; margin: 6px 0 8px; color:#0f172a; }
+.price small { font-size:.9rem; color:#475569; font-weight:600; }
+.price-note { color:#475569; margin-top:8px; }
+.price-cta { display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px; font-weight:700; border:1px solid rgba(15,23,42,.12); background:#eef2ff; color:#234a84; text-decoration:none; }
+.price-cta:hover { filter:brightness(.98); }
+
   </style>
 
   <!-- JSON-LD -->
@@ -202,6 +215,49 @@
       </div>
     </div>
   </section>
+
+  <section id="pricing" class="pricing">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Helpdesk Lite</h3>
+        <div class="price">$99 <small>/month</small></div>
+        <ul class="list">
+          <li>Email & remote support</li>
+          <li>Response during business hours</li>
+          <li>Monthly health summary</li>
+        </ul>
+        <p class="price-note">Great starter coverage.</p>
+        <a class="price-cta" href="/#contact">Start Lite</a>
+      </div>
+      <div class="price-card">
+        <h3>Helpdesk Standard</h3>
+        <div class="price">$249 <small>/month</small></div>
+        <ul class="list">
+          <li>Onboarding/offboarding</li>
+          <li>Vendor coordination</li>
+          <li>Quarterly roadmap</li>
+        </ul>
+        <p class="price-note">Most popular plan.</p>
+        <a class="price-cta" href="/#contact">Choose Standard</a>
+      </div>
+      <div class="price-card">
+        <h3>Helpdesk Plus</h3>
+        <div class="price">$499 <small>/month</small></div>
+        <ul class="list">
+          <li>Training/office hours</li>
+          <li>Project blocks included</li>
+          <li>Priority response</li>
+        </ul>
+        <p class="price-note">For larger teams & multi-site.</p>
+        <a class="price-cta" href="/#contact">Choose Plus</a>
+      </div>
+    </div>
+    <p class="price-note">Project work: $120/hr or fixed-fee after scoping. Nonprofit discounts available.</p>
+  </div>
+</section>
+
 
   <!-- CTA -->
   <section style="padding-top:0;">

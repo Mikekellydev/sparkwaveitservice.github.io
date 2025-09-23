@@ -57,7 +57,20 @@
     .list { margin:0; padding-left:0; list-style:none; }
     .list li { display:flex; align-items:flex-start; margin:10px 0; }
     .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background:#0e1726; border:1px solid #273451; padding:2px 6px; border-radius:6px; font-size:.85rem; color:#b7c8e5; }
-  </style>
+
+/* Pricing blocks */
+.pricing { padding-top: 0; }
+.price-grid { display:grid; gap:20px; grid-template-columns:repeat(3, minmax(0,1fr)); }
+@media (max-width:980px){ .price-grid{ grid-template-columns:1fr; } }
+.price-card { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(2,8,23,.18); }
+.price-card h3 { margin:6px 0 6px; }
+.price { font-size: 1.9rem; font-weight: 800; margin: 6px 0 8px; color:#0f172a; }
+.price small { font-size:.9rem; color:#475569; font-weight:600; }
+.price-note { color:#475569; margin-top:8px; }
+.price-cta { display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px; font-weight:700; border:1px solid rgba(15,23,42,.12); background:#eef2ff; color:#234a84; text-decoration:none; }
+.price-cta:hover { filter:brightness(.98); }
+
+</style>
 </head>
 <body>
 
@@ -240,6 +253,49 @@
       <p class="muted" style="margin-top:10px;">Pricing available on discovery call. Nonprofit discounts available.</p>
     </div>
   </section>
+
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price">$39 <small>/month</small></div>
+        <ul class="list">
+          <li>1 site · SSL · CDN setup</li>
+          <li>Nightly backups & updates</li>
+          <li>Uptime monitor + monthly report</li>
+        </ul>
+        <p class="price-note">Best for small churches & microsites.</p>
+        <a class="price-cta" href="/#contact">Get Started</a>
+      </div>
+      <div class="price-card">
+        <h3>Standard</h3>
+        <div class="price">$99 <small>/month</small></div>
+        <ul class="list">
+          <li>Up to 3 sites + staging</li>
+          <li>Security hardening & WAF/CDN</li>
+          <li>Quarterly performance tune-up</li>
+        </ul>
+        <p class="price-note">Most popular for growing ministries.</p>
+        <a class="price-cta" href="/#contact">Get Started</a>
+      </div>
+      <div class="price-card">
+        <h3>Multi-Site</h3>
+        <div class="price">$249 <small>/month</small></div>
+        <ul class="list">
+          <li>3+ sites / multi-campus</li>
+          <li>Custom reporting & runbooks</li>
+          <li>Priority support</li>
+        </ul>
+        <p class="price-note">Tailored for networks & multi-campus.</p>
+        <a class="price-cta" href="/#contact">Get Started</a>
+      </div>
+    </div>
+    <p class="price-note">Nonprofit discounts available. Hosting costs are all-in for management; infrastructure fees (if any) discussed on call.</p>
+  </div>
+</section>
+
 
   <!-- CTA band -->
   <section class="section" style="padding-top:0;">
