@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Microsoft 365 Tenant Setup & Administration | Sparkwave IT Service</title>
-  <meta name="description" content="Secure identity, licensing guidance, SharePoint/OneDrive governance, Teams rollout, and security baselines tailored for churches & nonprofits in Northeast Indiana and beyond." />
+  <title>Microsoft 365 — Tenant Setup & Administration | Sparkwave IT Service</title>
+  <meta name="description" content="Mission-first Microsoft 365 for churches & nonprofits — secure identity, MFA, SharePoint/OneDrive governance, Teams rollouts, and admin care." />
   <link rel="canonical" href="https://sparkwaveitservice.com/services/microsoft-365" />
 
-  <!-- Fonts & icons to match index -->
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
-    :root {
-      --brand:#2c5aa0; --brand-600:#234a84; --accent:#28a745; --ink:#0f172a; --muted:#475569;
-      --bg:#0b1220; --card:#ffffff; --ring:rgba(44,90,160,.35); --shadow:0 10px 30px rgba(2,8,23,.18);
-      --radius:18px; --radius-lg:26px; --maxw:1200px;
-    }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:#f8fafc;line-height:1.6}
+    :root{--brand:#2c5aa0;--brand-600:#234a84;--accent:#28a745;--ink:#0f172a;--muted:#475569;--bg:#0b1220;--card:#ffffff;--ring:rgba(44,90,160,.35);--shadow:0 10px 30px rgba(2,8,23,.18);--radius:18px;--radius-lg:26px;--maxw:1200px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f8fafc;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
     a{color:var(--brand);text-decoration:none} a:hover{color:var(--brand-600)}
     .container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+
+    /* Nav */
     .navwrap{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(10px);background:rgba(255,255,255,.7);border-bottom:1px solid rgba(15,23,42,.06)}
     nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;gap:12px;align-items:center;font-weight:800;color:#0f172a}
@@ -27,6 +26,10 @@
     .navlinks{display:flex;gap:20px;align-items:center}.navlinks a{font-weight:600;color:#0f172a;opacity:.9}
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.25)}
     .cta:hover{background:var(--brand-600)}
+    /* Extra safeguard for any raw logo tags */
+    img[alt="Sparkwave IT Service logo"]{width:40px;height:auto;border-radius:10px}
+
+    /* Hero */
     .page-hero{padding:80px 0 36px;background:linear-gradient(180deg, rgba(11,18,32,.35), rgba(11,18,32,.75)), url('/images/website-hero-linkedin.png') center/cover no-repeat;color:#e6edf6}
     .eyebrow{display:inline-block;background:rgba(40,167,69,.14);color:#e8fff0;border:1px solid rgba(40,167,69,.3);padding:6px 12px;border-radius:999px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;font-size:.75rem}
     .hero-title{margin:14px 0 8px;font-size:clamp(1.8rem,2.35rem + 1.2vw,3rem);line-height:1.12}
@@ -34,11 +37,35 @@
     .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;font-weight:700;border:1px solid transparent}
     .btn.primary{background:var(--accent);color:#fff}.btn.primary:hover{filter:brightness(.95)}
     .btn.secondary{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.32)}
+
+    /* Sections */
     section{padding:clamp(56px,6.5vw,90px) 0}
-    .grid{display:grid;gap:20px}.grid-2{grid-template-columns:1.2fr .8fr}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid{display:grid;gap:20px}
+    .grid-2{grid-template-columns:1.2fr .8fr}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
     @media (max-width:980px){.grid-2,.grid-3{grid-template-columns:1fr}}
     .card{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
     .list{margin:10px 0 0 0;padding:0 0 0 18px;color:#334155}
+
+    /* Pricing blocks */
+    .pricing{padding-top:0}
+    .price-grid{display:grid;gap:20px;grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:980px){.price-grid{grid-template-columns:1fr}}
+    .price-card{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(2,8,23,.18)}
+    .price-card h3{margin:6px 0 6px}
+    .price{font-size:1.9rem;font-weight:800;margin:6px 0 8px;color:#0f172a}
+    .price small{font-size:.9rem;color:#475569;font-weight:600}
+    .price-note{color:#475569;margin-top:8px}
+    .price-cta{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;font-weight:700;border:1px solid rgba(15,23,42,.12);background:#eef2ff;color:#234a84;text-decoration:none}
+    .price-cta:hover{filter:brightness(.98)}
+    /* Base + seat helpers */
+    .price-row{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+    .price-base{font-size:1.9rem;font-weight:800;color:#0f172a}
+    .price-seat{font-size:1.1rem;font-weight:800;color:#0f172a}
+    .unit{font-size:.95rem;color:#475569;font-weight:600;margin-left:2px}
+    .min-note{color:#475569;margin-top:6px}
+
+    /* Footer */
     footer{background:#0f1b33;color:#cbd5e1}
     .footgrid{display:grid;gap:24px;grid-template-columns:1.3fr .7fr .7fr}
     @media (max-width:900px){.footgrid{grid-template-columns:1fr 1fr}}
@@ -46,33 +73,20 @@
     .footbrand{display:flex;gap:12px;align-items:center;font-weight:800;color:#e2e8f0}
     .footbrand img{width:42px;height:42px;border-radius:10px}
     .copyright{border-top:1px solid rgba(148,163,184,.2);margin-top:26px;padding:16px 0;text-align:center;font-size:.9rem}
-
-/* Pricing blocks */
-.pricing { padding-top: 0; }
-.price-grid { display:grid; gap:20px; grid-template-columns:repeat(3, minmax(0,1fr)); }
-@media (max-width:980px){ .price-grid{ grid-template-columns:1fr; } }
-.price-card { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(2,8,23,.18); }
-.price-card h3 { margin:6px 0 6px; }
-.price { font-size: 1.9rem; font-weight: 800; margin: 6px 0 8px; color:#0f172a; }
-.price small { font-size:.9rem; color:#475569; font-weight:600; }
-.price-note { color:#475569; margin-top:8px; }
-.price-cta { display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px; font-weight:700; border:1px solid rgba(15,23,42,.12); background:#eef2ff; color:#234a84; text-decoration:none; }
-.price-cta:hover { filter:brightness(.98); }
-
-</style>
+  </style>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Microsoft 365 Tenant Setup & Administration",
-    "provider": { "@type": "Organization", "name": "Sparkwave IT Service", "url": "https://sparkwaveitservice.com", "logo": "https://sparkwaveitservice.com/images/logo.png" },
-    "areaServed": ["Auburn, IN", "Fort Wayne, IN", "Northeast Indiana", "Remote"],
-    "audience": { "@type": "Audience", "audienceType": "Churches and Nonprofits" },
-    "serviceType": "Cloud Productivity Platform Administration",
-    "description": "Secure identity, licensing, SharePoint/OneDrive governance, Teams rollout, and security baselines for ministries.",
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Microsoft 365 Tenant Setup & Administration",
+    "provider":{"@type":"Organization","name":"Sparkwave IT Service","url":"https://sparkwaveitservice.com","logo":"https://sparkwaveitservice.com/images/logo.png"},
+    "areaServed":["Auburn, IN","Fort Wayne, IN","Northeast Indiana","Remote"],
+    "audience":{"@type":"Audience","audienceType":"Churches and Nonprofits"},
+    "serviceType":"Microsoft 365 Administration",
+    "description":"Secure identity, MFA, SharePoint/OneDrive governance, Teams rollouts, licensing guidance, and ongoing administration.",
+    "offers":{"@type":"Offer","availability":"https://schema.org/InStock"}
   }
   </script>
 </head>
@@ -97,8 +111,8 @@
   <header class="page-hero">
     <div class="container">
       <span class="eyebrow">Mission-First Technology</span>
-      <h1 class="hero-title">Microsoft 365 Tenant Setup & Administration</h1>
-      <p class="hero-sub">Secure identity, licensing clarity, SharePoint/OneDrive governance, Teams rollouts, and guardrails that protect people and data.</p>
+      <h1 class="hero-title">Microsoft 365 — Tenant Setup & Administration</h1>
+      <p class="hero-sub">Secure identity, MFA, SharePoint/OneDrive governance, Teams rollouts, and right-sized policies for staff & volunteers.</p>
       <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
         <a class="btn primary" href="/#contact">Start a Free Discovery Call</a>
         <a class="btn secondary" href="#features">Explore Features</a>
@@ -111,25 +125,25 @@
     <div class="container grid grid-2">
       <div>
         <h2>Why Microsoft 365 matters for ministry</h2>
-        <p class="hero-sub" style="color:#475569; margin:0 0 8px 0;">
-          The tools you already own can reduce chaos and increase collaboration — if your tenant is set up with clear policies,
-          secure identity, and a simple folder strategy volunteers can follow.
+        <p style="color:#475569;margin:0 0 8px 0;">
+          The right tenant setup protects people and data while keeping collaboration simple. We align security and structure to
+          how your ministry actually works — not the other way around.
         </p>
         <ul class="list">
-          <li><strong>Clarity for staff & volunteers:</strong> where to save, how to share, who has access.</li>
-          <li><strong>Security by default:</strong> MFA, conditional access, and data loss prevention that respects people.</li>
-          <li><strong>Governance that scales:</strong> SharePoint sites and Teams that don’t sprawl out of control.</li>
+          <li><strong>Secure identity:</strong> MFA, conditional access, least-privilege roles.</li>
+          <li><strong>Clear organization:</strong> SharePoint sites & OneDrive structure that makes sense to users.</li>
+          <li><strong>Governance:</strong> data loss prevention and retention that fits your risk & budget.</li>
         </ul>
       </div>
       <aside class="card">
         <h3>At-a-glance</h3>
         <ul class="list">
-          <li>Licensing guidance & cost optimization</li>
-          <li>Secure identity (MFA, conditional access)</li>
-          <li>SharePoint/OneDrive structure & permissions</li>
-          <li>Teams rollout & adoption tips</li>
-          <li>Email hygiene (SPF/DKIM/DMARC)</li>
-          <li>Backups & retention</li>
+          <li>Baseline security & MFA</li>
+          <li>License guidance & change support</li>
+          <li>SharePoint & OneDrive information architecture</li>
+          <li>Teams policies & adoption</li>
+          <li>SPF/DKIM/DMARC email hygiene</li>
+          <li>Backup & retention guidance</li>
         </ul>
       </aside>
     </div>
@@ -142,123 +156,124 @@
       <div class="grid grid-3">
         <div class="card">
           <h3>Secure Identity</h3>
-          <p style="color:#475569">MFA that’s actually usable, baseline policies, and least-privilege admin roles.</p>
+          <p style="color:#475569">Protect accounts with enforcement, not confusion.</p>
           <ul class="list">
-            <li>MFA & conditional access</li>
+            <li>MFA setup & enforcement</li>
+            <li>Conditional access policies</li>
             <li>Role-based admin access</li>
-            <li>Security score improvements</li>
           </ul>
         </div>
         <div class="card">
-          <h3>SharePoint & OneDrive</h3>
-          <p style="color:#475569">Simple structure, clear permissions, and a “where to put what” guide.</p>
+          <h3>SharePoint / OneDrive</h3>
+          <p style="color:#475569">Structure that mirrors how your teams work.</p>
           <ul class="list">
-            <li>Site architecture & templates</li>
-            <li>Permissions & sharing policies</li>
-            <li>File lifecycle & retention</li>
+            <li>Sites, libraries, and permissions</li>
+            <li>Shared vs. personal boundaries</li>
+            <li>External sharing guardrails</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Teams Rollout</h3>
-          <p style="color:#475569">Guardrails to prevent sprawl, plus training that sticks.</p>
+          <h3>Teams & Collaboration</h3>
+          <p style="color:#475569">Policies and training to keep chats and files manageable.</p>
           <ul class="list">
-            <li>Team templates & channels</li>
-            <li>Meetings, recordings, transcripts</li>
-            <li>Guest access policies</li>
+            <li>Teams templates & lifecycle</li>
+            <li>Meeting & recording policies</li>
+            <li>Adoption materials for staff & volunteers</li>
           </ul>
         </div>
         <div class="card">
           <h3>Email Hygiene</h3>
-          <p style="color:#475569">Deliverability and protection: SPF, DKIM, DMARC, antiphish.</p>
+          <p style="color:#475569">Stop spoofing and improve deliverability.</p>
           <ul class="list">
             <li>SPF/DKIM/DMARC alignment</li>
-            <li>Transport rules & quarantine</li>
-            <li>Training & templates</li>
+            <li>Quarantine & phishing rules</li>
+            <li>Transport rules & safe links</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Backups & Recovery</h3>
-          <p style="color:#475569">3-2-1 for mail, files, and sites — with tested restores.</p>
+          <h3>Data Protection</h3>
+          <p style="color:#475569">Right-sized retention and backup options.</p>
           <ul class="list">
-            <li>M365 backups (mail, OneDrive, SharePoint)</li>
-            <li>Retention labels & restores</li>
-            <li>Runbooks your team can follow</li>
+            <li>DLP & retention policies</li>
+            <li>M365 backup recommendations</li>
+            <li>Restore runbooks</li>
           </ul>
         </div>
         <div class="card">
           <h3>Documentation</h3>
-          <p style="color:#475569">Clear, friendly docs for admins and volunteers.</p>
+          <p style="color:#475569">Clear guidance so new staff can ramp quickly.</p>
           <ul class="list">
-            <li>Quick-start & onboarding guides</li>
-            <li>Security & sharing do/don’t list</li>
-            <li>Admin change log</li>
+            <li>Admin quick-start</li>
+            <li>How-to guides & checklists</li>
+            <li>License map & vendor list</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Outcomes -->
-  <section style="padding-top:0;">
+  <!-- Pricing (base + per-seat) -->
+  <section id="pricing" class="pricing">
     <div class="container">
-      <h2>Practical outcomes</h2>
-      <div class="grid grid-3">
-        <div class="card"><strong>Less chaos.</strong><br/><span style="color:#475569">People know where to save and how to share.</span></div>
-        <div class="card"><strong>Better security.</strong><br/><span style="color:#475569">MFA and guardrails without slowing ministry down.</span></div>
-        <div class="card"><strong>Lower waste.</strong><br/><span style="color:#475569">Right-sized licenses and simpler governance.</span></div>
+      <h2>Pricing</h2>
+
+      <div class="price-grid">
+        <!-- One-time setup -->
+        <div class="price-card">
+          <h3>Tenant Setup</h3>
+          <div class="price">$750 <small>one-time</small></div>
+          <ul class="list">
+            <li>Baseline security & MFA</li>
+            <li>SharePoint / OneDrive structure</li>
+            <li>SPF / DKIM / DMARC alignment</li>
+          </ul>
+          <p class="price-note">New tenant or foundational clean-up.</p>
+          <a class="price-cta" href="/#contact">Start Setup</a>
+        </div>
+
+        <!-- Admin Care (base + per seat) -->
+        <div class="price-card">
+          <h3>Admin Care</h3>
+          <div class="price-row">
+            <div class="price-base">$99<span class="unit">/mo</span></div>
+            <div class="price-seat">+ $4<span class="unit">/user/mo</span></div>
+          </div>
+          <ul class="list">
+            <li>License guidance & changes</li>
+            <li>Policy adjustments & support</li>
+            <li>Monthly health summary</li>
+          </ul>
+          <p class="min-note">Licensing not included. Nonprofit discounts available.</p>
+          <a class="price-cta" href="/#contact">Get Admin Care</a>
+        </div>
+
+        <!-- Growth Bundle (base + per seat) -->
+        <div class="price-card">
+          <h3>Growth Bundle</h3>
+          <div class="price-row">
+            <div class="price-base">$299<span class="unit">/mo</span></div>
+            <div class="price-seat">+ $7<span class="unit">/user/mo</span></div>
+          </div>
+          <ul class="list">
+            <li>Admin Care + training sessions</li>
+            <li>Quarterly roadmap review</li>
+            <li>Backup & retention tuning</li>
+          </ul>
+          <p class="min-note">Licensing not included.</p>
+          <a class="price-cta" href="/#contact">Choose Bundle</a>
+        </div>
       </div>
+
+      <p class="price-note">Email/file migrations quoted after discovery (users & data volume).</p>
     </div>
   </section>
-
-  <section id="pricing" class="pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Tenant Setup</h3>
-        <div class="price">$750 <small>one-time</small></div>
-        <ul class="list">
-          <li>Baseline security & MFA</li>
-          <li>SharePoint/OneDrive structure</li>
-          <li>Email hygiene (SPF/DKIM/DMARC)</li>
-        </ul>
-        <p class="price-note">For new tenants or major clean-ups.</p>
-        <a class="price-cta" href="/#contact">Start Setup</a>
-      </div>
-      <div class="price-card">
-        <h3>Admin Care</h3>
-        <div class="price">$149 <small>/month</small></div>
-        <ul class="list">
-          <li>License guidance & changes</li>
-          <li>Policy adjustments & support</li>
-          <li>Monthly health summary</li>
-        </ul>
-        <p class="price-note">Covers day-to-day administration.</p>
-        <a class="price-cta" href="/#contact">Get Admin Care</a>
-      </div>
-      <div class="price-card">
-        <h3>Growth Bundle</h3>
-        <div class="price">$349 <small>/month</small></div>
-        <ul class="list">
-          <li>Admin Care + training sessions</li>
-          <li>Quarterly roadmap review</li>
-          <li>Backup & retention tuning</li>
-        </ul>
-        <p class="price-note">Best for teams adding structure.</p>
-        <a class="price-cta" href="/#contact">Choose Bundle</a>
-      </div>
-    </div>
-    <p class="price-note">Migrations (mail/files) quoted per user/data size after discovery.</p>
-  </div>
-</section>
-
 
   <!-- CTA -->
   <section style="padding-top:0;">
     <div class="container">
       <div class="card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
         <div>
-          <h2 style="margin:0 0 6px;">Ready to tune up your Microsoft 365 tenant?</h2>
+          <h2 style="margin:0 0 6px;">Ready to right-size your Microsoft 365 tenant?</h2>
           <p style="margin:0;color:#475569">Book a 20-minute discovery call. We’ll map quick wins and a practical path forward.</p>
         </div>
         <div>
@@ -269,7 +284,7 @@
     </div>
   </section>
 
-  <!-- Footer (same structure as index) -->
+  <!-- Footer -->
   <footer>
     <div class="container" style="padding: 40px 0 10px;">
       <div class="footgrid">
@@ -289,6 +304,7 @@
           <a href="/services/google-workspace.html" style="color:#94a3b8; text-decoration:none;">Google Workspace</a>
           <a href="/services/security.html" style="color:#94a3b8; text-decoration:none;">Security</a>
           <a href="/services/backups.html" style="color:#94a3b8; text-decoration:none;">Backups</a>
+          <a href="/services/support.html" style="color:#94a3b8; text-decoration:none;">Support</a>
         </div>
         <div class="footlinks" style="display:flex; flex-direction:column; gap:6px;">
           <strong>Connect</strong>

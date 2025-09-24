@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Google Workspace Tenant Management & Migrations | Sparkwave IT Service</title>
-  <meta name="description" content="Org units, Shared Drives governance, secure identity, SPF/DKIM/DMARC, and migrations — right-sized for churches & nonprofits." />
+  <title>Google Workspace — Tenant Management & Migrations | Sparkwave IT Service</title>
+  <meta name="description" content="Mission-first Google Workspace for churches & nonprofits — org units, Shared Drives governance, email hygiene (SPF/DKIM/DMARC), and ongoing admin care." />
   <link rel="canonical" href="https://sparkwaveitservice.com/services/google-workspace" />
 
-  <!-- Fonts & icons (match index) -->
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
-    :root { --brand:#2c5aa0; --brand-600:#234a84; --accent:#28a745; --ink:#0f172a; --muted:#475569;
-            --bg:#0b1220; --card:#ffffff; --ring:rgba(44,90,160,.35); --shadow:0 10px 30px rgba(2,8,23,.18);
-            --radius:18px; --radius-lg:26px; --maxw:1200px; }
+    :root{--brand:#2c5aa0;--brand-600:#234a84;--accent:#28a745;--ink:#0f172a;--muted:#475569;--bg:#0b1220;--card:#ffffff;--ring:rgba(44,90,160,.35);--shadow:0 10px 30px rgba(2,8,23,.18);--radius:18px;--radius-lg:26px;--maxw:1200px}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:#f8fafc;line-height:1.6}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f8fafc;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
     a{color:var(--brand);text-decoration:none} a:hover{color:var(--brand-600)}
     .container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
 
@@ -28,6 +26,8 @@
     .navlinks{display:flex;gap:20px;align-items:center}.navlinks a{font-weight:600;color:#0f172a;opacity:.9}
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.25)}
     .cta:hover{background:var(--brand-600)}
+    /* Extra safeguard for any raw logo tags */
+    img[alt="Sparkwave IT Service logo"]{width:40px;height:auto;border-radius:10px}
 
     /* Hero */
     .page-hero{padding:80px 0 36px;background:linear-gradient(180deg, rgba(11,18,32,.35), rgba(11,18,32,.75)), url('/images/website-hero-linkedin.png') center/cover no-repeat;color:#e6edf6}
@@ -47,6 +47,25 @@
     .card{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
     .list{margin:10px 0 0 0;padding:0 0 0 18px;color:#334155}
 
+    /* Pricing blocks */
+    .pricing{padding-top:0}
+    .price-grid{display:grid;gap:20px;grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:980px){.price-grid{grid-template-columns:1fr}}
+    .price-card{background:#fff;border:1px solid rgba(15,23,42,.08);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(2,8,23,.18)}
+    .price-card h3{margin:6px 0 6px}
+    .price{font-size:1.9rem;font-weight:800;margin:6px 0 8px;color:#0f172a}
+    .price small{font-size:.9rem;color:#475569;font-weight:600}
+    .price-note{color:#475569;margin-top:8px}
+    .price-cta{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;font-weight:700;border:1px solid rgba(15,23,42,.12);background:#eef2ff;color:#234a84;text-decoration:none}
+    .price-cta:hover{filter:brightness(.98)}
+
+    /* Base + seat helpers */
+    .price-row{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+    .price-base{font-size:1.9rem;font-weight:800;color:#0f172a}
+    .price-seat{font-size:1.1rem;font-weight:800;color:#0f172a}
+    .unit{font-size:.95rem;color:#475569;font-weight:600;margin-left:2px}
+    .min-note{color:#475569;margin-top:6px}
+
     /* Footer */
     footer{background:#0f1b33;color:#cbd5e1}
     .footgrid{display:grid;gap:24px;grid-template-columns:1.3fr .7fr .7fr}
@@ -55,33 +74,20 @@
     .footbrand{display:flex;gap:12px;align-items:center;font-weight:800;color:#e2e8f0}
     .footbrand img{width:42px;height:42px;border-radius:10px}
     .copyright{border-top:1px solid rgba(148,163,184,.2);margin-top:26px;padding:16px 0;text-align:center;font-size:.9rem}
-  
-  /* Pricing blocks */
-.pricing { padding-top: 0; }
-.price-grid { display:grid; gap:20px; grid-template-columns:repeat(3, minmax(0,1fr)); }
-@media (max-width:980px){ .price-grid{ grid-template-columns:1fr; } }
-.price-card { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(2,8,23,.18); }
-.price-card h3 { margin:6px 0 6px; }
-.price { font-size: 1.9rem; font-weight: 800; margin: 6px 0 8px; color:#0f172a; }
-.price small { font-size:.9rem; color:#475569; font-weight:600; }
-.price-note { color:#475569; margin-top:8px; }
-.price-cta { display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:999px; font-weight:700; border:1px solid rgba(15,23,42,.12); background:#eef2ff; color:#234a84; text-decoration:none; }
-.price-cta:hover { filter:brightness(.98); }
-
   </style>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Google Workspace Tenant Management & Migrations",
-    "provider": { "@type": "Organization", "name": "Sparkwave IT Service", "url": "https://sparkwaveitservice.com", "logo": "https://sparkwaveitservice.com/images/logo.png" },
-    "areaServed": ["Auburn, IN", "Fort Wayne, IN", "Northeast Indiana", "Remote"],
-    "audience": { "@type": "Audience", "audienceType": "Churches and Nonprofits" },
-    "serviceType": "Cloud Productivity Platform Administration",
-    "description": "Org units, drive governance, secure identity, SPF/DKIM/DMARC, and migrations — right-sized for ministries.",
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Google Workspace Tenant Management & Migrations",
+    "provider":{"@type":"Organization","name":"Sparkwave IT Service","url":"https://sparkwaveitservice.com","logo":"https://sparkwaveitservice.com/images/logo.png"},
+    "areaServed":["Auburn, IN","Fort Wayne, IN","Northeast Indiana","Remote"],
+    "audience":{"@type":"Audience","audienceType":"Churches and Nonprofits"},
+    "serviceType":"Google Workspace Administration",
+    "description":"Org units and roles, Shared Drives governance, email hygiene, and ongoing admin care for churches and nonprofits.",
+    "offers":{"@type":"Offer","availability":"https://schema.org/InStock"}
   }
   </script>
 </head>
@@ -106,8 +112,8 @@
   <header class="page-hero">
     <div class="container">
       <span class="eyebrow">Mission-First Technology</span>
-      <h1 class="hero-title">Google Workspace Tenant Management & Migrations</h1>
-      <p class="hero-sub">Best-practice org structure, Shared Drives governance, secure email, and smooth migrations — tuned for staff and volunteers.</p>
+      <h1 class="hero-title">Google Workspace — Tenant Management & Migrations</h1>
+      <p class="hero-sub">Org units & admin roles, Shared Drives governance, email hygiene, and practical policies for staff & volunteers.</p>
       <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
         <a class="btn primary" href="/#contact">Start a Free Discovery Call</a>
         <a class="btn secondary" href="#features">Explore Features</a>
@@ -120,24 +126,24 @@
     <div class="container grid grid-2">
       <div>
         <h2>Why Google Workspace matters for ministry</h2>
-        <p style="color:#475569; margin:0 0 8px 0;">
-          When org units, sharing policies, and Shared Drives are clear, collaboration becomes simple and secure — even with volunteers.
+        <p style="color:#475569;margin:0 0 8px 0;">
+          A clear org structure and sane sharing rules keep ministry moving without creating risk. We design governance that fits how your people actually work.
         </p>
         <ul class="list">
-          <li><strong>Clarity:</strong> Staff and volunteers know where to save, how to share, and who has access.</li>
-          <li><strong>Security:</strong> 2-Step Verification, context-aware access, and least-privilege admins.</li>
-          <li><strong>Governance:</strong> Shared Drives and retention that prevent data loss and drive sprawl.</li>
+          <li><strong>Clarity:</strong> org units, groups, and roles that match your teams.</li>
+          <li><strong>Safety:</strong> Share settings, DLP, and retention that respect budgets and volunteers.</li>
+          <li><strong>Deliverability:</strong> SPF/DKIM/DMARC so newsletters and updates reach inboxes.</li>
         </ul>
       </div>
       <aside class="card">
         <h3>At-a-glance</h3>
         <ul class="list">
-          <li>Org units & policy baselines</li>
-          <li>Shared Drives structure & permissions</li>
-          <li>Secure email (SPF/DKIM/DMARC)</li>
-          <li>Migrations from M365/legacy</li>
-          <li>Backups & retention</li>
-          <li>Volunteer-friendly training</li>
+          <li>Org units & admin roles</li>
+          <li>Shared Drives design & permissions</li>
+          <li>External sharing guardrails</li>
+          <li>SPF/DKIM/DMARC alignment</li>
+          <li>Drive & Gmail retention guidance</li>
+          <li>Backup options & restore runbooks</li>
         </ul>
       </aside>
     </div>
@@ -149,124 +155,125 @@
       <h2>What’s included</h2>
       <div class="grid grid-3">
         <div class="card">
-          <h3>Org Units & Policies</h3>
-          <p style="color:#475569">Role-based org units, baseline settings, and sensible admin roles.</p>
+          <h3>Org Units & Roles</h3>
+          <p style="color:#475569">Separation of duties and least-privilege access for staff and volunteers.</p>
           <ul class="list">
-            <li>OU design for staff/volunteers</li>
-            <li>Admin roles & least privilege</li>
-            <li>Security baselines & reviews</li>
+            <li>Admin role mapping</li>
+            <li>Group-based policy assignment</li>
+            <li>Lifecycle for onboarding/offboarding</li>
           </ul>
         </div>
         <div class="card">
           <h3>Shared Drives Governance</h3>
-          <p style="color:#475569">Clear structure and permissions that prevent chaos and loss.</p>
+          <p style="color:#475569">Structure that makes files findable and safe.</p>
           <ul class="list">
-            <li>Drive templates by ministry</li>
-            <li>Membership & sharing rules</li>
-            <li>Retention & lifecycle</li>
+            <li>Drive taxonomy & ownership</li>
+            <li>Permission patterns</li>
+            <li>External sharing boundaries</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Secure Email & Deliverability</h3>
-          <p style="color:#475569">Protect people and reduce spam while keeping good mail flowing.</p>
+          <h3>Email Hygiene</h3>
+          <p style="color:#475569">Protect your domain and deliver mail reliably.</p>
           <ul class="list">
             <li>SPF/DKIM/DMARC alignment</li>
-            <li>Inbound spam/phish controls</li>
-            <li>Quarantine & review workflow</li>
+            <li>Inbound/outbound rules</li>
+            <li>Phishing & spoofing protections</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Migrations</h3>
-          <p style="color:#475569">Careful planning, staged cutovers, and communication templates.</p>
+          <h3>Data Protection</h3>
+          <p style="color:#475569">Right-sized retention & backup guidance.</p>
           <ul class="list">
-            <li>M365 ↔ Workspace email & files</li>
-            <li>Legacy POP/IMAP moves</li>
-            <li>User training & handoff</li>
+            <li>DLP & retention for Drive/Gmail</li>
+            <li>3-2-1 backup options</li>
+            <li>Restore testing & runbooks</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Backups & Recovery</h3>
-          <p style="color:#475569">3-2-1 for mail and Drive — with tested restores and runbooks.</p>
+          <h3>Collaboration Guardrails</h3>
+          <p style="color:#475569">Keep sharing simple without losing control.</p>
           <ul class="list">
-            <li>Mail/Drive backups</li>
-            <li>Retention, eDiscovery</li>
-            <li>Documented restore steps</li>
+            <li>Link sharing defaults</li>
+            <li>Guest access guidance</li>
+            <li>App integrations & scopes</li>
           </ul>
         </div>
         <div class="card">
           <h3>Documentation</h3>
-          <p style="color:#475569">Friendly, clear docs for admins and volunteers alike.</p>
+          <p style="color:#475569">Clear, simple instructions your team can follow.</p>
           <ul class="list">
-            <li>“Where to put what” guide</li>
-            <li>Sharing do/don’t list</li>
-            <li>Admin change log</li>
+            <li>Admin quick-start</li>
+            <li>Volunteer onboarding guides</li>
+            <li>License and vendor map</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Outcomes -->
-  <section style="padding-top:0;">
+  <!-- Pricing (base + per-seat) -->
+  <section id="pricing" class="pricing">
     <div class="container">
-      <h2>Practical outcomes</h2>
-      <div class="grid grid-3">
-        <div class="card"><strong>Less confusion.</strong><br/><span style="color:#475569">Shared Drives make sense and stay tidy.</span></div>
-        <div class="card"><strong>Better security.</strong><br/><span style="color:#475569">2-Step Verification & guardrails for real life.</span></div>
-        <div class="card"><strong>Smooth migrations.</strong><br/><span style="color:#475569">Plan, communicate, and land the change well.</span></div>
+      <h2>Pricing</h2>
+
+      <div class="price-grid">
+        <!-- One-time setup -->
+        <div class="price-card">
+          <h3>Tenant Setup</h3>
+          <div class="price">$650 <small>one-time</small></div>
+          <ul class="list">
+            <li>Org units & admin roles</li>
+            <li>Shared Drives structure</li>
+            <li>SPF / DKIM / DMARC alignment</li>
+          </ul>
+          <p class="price-note">New tenant or foundational redesign.</p>
+          <a class="price-cta" href="/#contact">Start Setup</a>
+        </div>
+
+        <!-- Admin Care (base + per seat) -->
+        <div class="price-card">
+          <h3>Admin Care</h3>
+          <div class="price-row">
+            <div class="price-base">$89<span class="unit">/mo</span></div>
+            <div class="price-seat">+ $3<span class="unit">/user/mo</span></div>
+          </div>
+          <ul class="list">
+            <li>Policy updates & access requests</li>
+            <li>Drive governance tweaks</li>
+            <li>Monthly health summary</li>
+          </ul>
+          <p class="min-note">Licensing not included. Nonprofit discounts available.</p>
+          <a class="price-cta" href="/#contact">Get Admin Care</a>
+        </div>
+
+        <!-- Growth Bundle (base + per seat) -->
+        <div class="price-card">
+          <h3>Growth Bundle</h3>
+          <div class="price-row">
+            <div class="price-base">$249<span class="unit">/mo</span></div>
+            <div class="price-seat">+ $6<span class="unit">/user/mo</span></div>
+          </div>
+          <ul class="list">
+            <li>Admin Care + training sessions</li>
+            <li>Quarterly roadmap review</li>
+            <li>Backup & retention tuning</li>
+          </ul>
+          <p class="min-note">Licensing not included.</p>
+          <a class="price-cta" href="/#contact">Choose Bundle</a>
+        </div>
       </div>
+
+      <p class="price-note">Migrations quoted after discovery (user count & data volume).</p>
     </div>
   </section>
-
-  <section id="pricing" class="pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Tenant Setup</h3>
-        <div class="price">$650 <small>one-time</small></div>
-        <ul class="list">
-          <li>Org units & admin roles</li>
-          <li>Shared Drives structure</li>
-          <li>SPF/DKIM/DMARC alignment</li>
-        </ul>
-        <p class="price-note">New tenant or foundational redesign.</p>
-        <a class="price-cta" href="/#contact">Start Setup</a>
-      </div>
-      <div class="price-card">
-        <h3>Admin Care</h3>
-        <div class="price">$129 <small>/month</small></div>
-        <ul class="list">
-          <li>Policy updates & access requests</li>
-          <li>Drive governance tweaks</li>
-          <li>Monthly health summary</li>
-        </ul>
-        <p class="price-note">Keeps Workspace tidy & secure.</p>
-        <a class="price-cta" href="/#contact">Get Admin Care</a>
-      </div>
-      <div class="price-card">
-        <h3>Growth Bundle</h3>
-        <div class="price">$299 <small>/month</small></div>
-        <ul class="list">
-          <li>Admin Care + training sessions</li>
-          <li>Quarterly roadmap review</li>
-          <li>Backup & retention tuning</li>
-        </ul>
-        <p class="price-note">For growing volunteer teams.</p>
-        <a class="price-cta" href="/#contact">Choose Bundle</a>
-      </div>
-    </div>
-    <p class="price-note">Migrations quoted after discovery (user count & data volume).</p>
-  </div>
-</section>
-
 
   <!-- CTA -->
   <section style="padding-top:0;">
     <div class="container">
       <div class="card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
         <div>
-          <h2 style="margin:0 0 6px;">Ready to tune your Google Workspace tenant?</h2>
+          <h2 style="margin:0 0 6px;">Ready to right-size Google Workspace?</h2>
           <p style="margin:0;color:#475569">Book a 20-minute discovery call. We’ll map quick wins and a practical path forward.</p>
         </div>
         <div>
