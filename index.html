@@ -131,6 +131,16 @@
 
     /* Utility */
     .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+  
+ 
+.hide-sm { display:inline; }
+.show-sm { display:none; }
+@media (max-width:980px){
+  .hide-sm { display:none; }
+  .show-sm { display:inline; }
+}
+
+  
   </style>
 
   <!-- Structured data -->
@@ -204,19 +214,39 @@
 
       <div class="grid cols-3" style="margin-top:22px;">
 
+        <!-- Launching Package -->
+
+        <!-- Launch Bundles -->
+<a href="/services/launch-bundles.html" class="card card-link">
+  <span class="price-pill">Bundle & Save</span>
+  <span class="pill">New!</span>
+  <h3>Launch Bundles (Recommended)</h3>
+  <p>All-in starter packages that include hosting, Microsoft 365 or Google Workspace admin care, security, backups, and monthly support — with setup waived.</p>
+  <p class="mobile-price-note">Starter from $249/mo + $3/user · Setup waived</p>
+  <p class="price-footnote">Microsoft/Google licenses billed separately by the vendor.</p>
+  <ul class="list">
+    <li>Hosting + Admin Care (M365 or Google)</li>
+    <li>Security baseline & backups</li>
+    <li>Monthly support hours</li>
+  </ul>
+</a>
+
+
         <!-- Managed Cloud Hosting -->
-        <a href="/services/managed-hosting.html" class="card card-link">
-          <span class="price-pill">$39/mo</span>
-          <span class="pill">Sparkwave Hosting</span>
-          <h3>Managed Cloud Hosting</h3>
-          <p>Powered by Sparkwave Hosting infrastructure: fast, secure websites and apps with SSL, monitoring, backups, and uptime reporting.</p>
-          <p class="mobile-price-note">Prices start at $39/mo</p>
-          <ul class="list">
-            <li>WordPress & static sites (GitHub Pages friendly)</li>
-            <li>Automatic backups & patching</li>
-            <li>DNS, SSL, CDN setup</li>
-          </ul>
-        </a>
+        <!-- Managed Cloud Hosting -->
+<a href="/services/managed-hosting.html" class="card card-link">
+  <span class="price-pill">$39/mo</span>
+  <span class="pill">Sparkwave Hosting</span>
+  <h3>Managed Cloud Hosting</h3>
+  <p>Fast, secure websites and apps with SSL, monitoring, backups, and uptime reporting — on the Sparkwave Hosting Platform.</p>
+  <p class="mobile-price-note">Prices start at $39/mo</p>
+  <ul class="list">
+    <li>WordPress & static sites (GitHub Pages friendly)</li>
+    <li>Automatic backups & patching</li>
+    <li>DNS, SSL, CDN setup</li>
+  </ul>
+</a>
+
 
         <!-- Microsoft 365 (base + per seat) -->
         <a href="/services/microsoft-365.html" class="card card-link">
