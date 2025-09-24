@@ -103,6 +103,10 @@
     .mobile-price-note{display:none; color:#475569; margin:6px 0 0 0; font-weight:700; font-size:.95rem}
     @media (max-width:980px){.mobile-price-note{display:block}}
 
+    /* Subtle footnote text under cards (desktop only by default) */
+    .price-footnote{color:#64748b; font-size:.85rem; margin-top:6px}
+    @media (max-width:980px){ .price-footnote{display:none} }
+
     /* About */
     .about{display:grid; gap:28px; grid-template-columns:1.1fr .9fr; align-items:center}
     @media (max-width:980px){.about{grid-template-columns:1fr}}
@@ -221,6 +225,7 @@
           <h3>Tenant Setup & Administration</h3>
           <p>Licensing guidance, secure identity, SharePoint/OneDrive governance, Teams rollouts, and security baselines tailored to your staff & volunteers.</p>
           <p class="mobile-price-note">Starts $99/mo + $4/user · Setup $750</p>
+          <p class="price-footnote">Microsoft 365 nonprofit licenses are billed separately by Microsoft.</p>
           <ul class="list">
             <li>Secure identity & MFA policies</li>
             <li>Email, SharePoint, OneDrive migrations</li>
@@ -235,6 +240,7 @@
           <h3>Tenant Management & Migrations</h3>
           <p>From small ministries to multi-site nonprofits — best-practice org structure, drive governance, and safe collaboration.</p>
           <p class="mobile-price-note">Starts $89/mo + $3/user · Setup $650</p>
+          <p class="price-footnote">Google Workspace nonprofit licenses are billed separately by Google.</p>
           <ul class="list">
             <li>Org units & policies</li>
             <li>Drive/Shared Drives structure</li>
